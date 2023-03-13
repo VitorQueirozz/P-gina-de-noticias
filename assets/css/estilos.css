@@ -26,6 +26,10 @@ header {
     color: hsl(236, 13%, 42%);
 }
 
+.menu a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
 .menu-mobile {
     display: flex;
     flex-direction: column;
@@ -109,6 +113,7 @@ header {
 
 .conteudo-textoBotao button:hover {
     transform: scale(1.1);
+    background-color: black;
 }
 
 .conteudo-textoSecundario {
@@ -118,6 +123,14 @@ header {
     width: 340px;
     background-color: hsl(240, 100%, 5%);
     padding: 20px;
+}
+
+.conteudo-textoSecundario a{
+    color: hsl(36, 100%, 99%);
+}
+
+.conteudo-textoSecundario a:hover {
+    color: hsl(35, 77%, 62%);
 }
 
 .conteudo-textoSecundario h1 {
@@ -175,6 +188,11 @@ hr {
 
 .informacoes-texto p {
     color: hsl(236, 13%, 42%);
+}
+
+.informacoes-texto a:hover {
+    color: hsl(5, 85%, 63%);
+    font-weight: 900;
 }
 
 .imagemP {
