@@ -1,0 +1,183 @@
+body {
+    background-color:  hsl(36, 100%, 99%);
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: hsl(236, 13%, 42%);
+}
+
+.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburguer {
+    border-top: 3px solid;
+    width: 25px;
+    visibility: hidden;
+}
+
+.hamburguer::after, .hamburguer::before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.primeira-parte {
+    display: flex;
+    gap: 60px;
+}
+
+.img-grande {
+    width: 800px;
+}
+
+.conteudo-imgTexto {
+    display: flex;
+    flex-direction: column;
+    width: 770px;
+    gap: 25px;
+}
+
+.conteudo-texto {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.conteudo-texto h1 {
+    font-size: 55px;
+    font-weight: 900;
+    width: 50%;
+}
+
+.conteudo-textoBotao {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+}
+
+.conteudo-textoBotao p {
+    color: hsl(236, 13%, 42%);
+}
+
+.conteudo-textoBotao button{
+    width: 50%;
+    height: 45px;
+    color: white;
+    font-weight: bold;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.conteudo-textoBotao button:hover {
+    transform: scale(1.1);
+}
+
+.conteudo-textoSecundario {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 340px;
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+}
+
+.conteudo-textoSecundario h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 40px;
+}
+
+.conteudo-textoSecundario h2 {
+    color: hsl(36, 100%, 99%);
+    font-size: 20px;
+}
+
+.conteudo-textoSecundario p {
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+}
+
+.conteudo-textoSecundario div {
+    line-height: 30px;
+}
+
+hr {
+    border: 1px solid hsla(233, 8%, 79%, 0.39);
+    border-radius: 20px;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 1170px;
+    gap: 50px;
+}
+
+.informacoes-imgTexto {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.informacoes-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.informacoes-texto h1 {
+    color: hsl(233, 8%, 79%);
+    font-weight: 900;
+}
+
+.informacoes-texto h3 {
+    color: hsl(240, 100%, 5%);
+}
+
+.informacoes-texto p {
+    color: hsl(236, 13%, 42%);
+}
+
+.imagemP {
+
+    width: 120px;
+}

@@ -1,0 +1,238 @@
+@media screen and (max-width:1200px) {
+    
+    .primeira-parte {
+        display: flex;
+        gap: 40px;
+    }
+
+    .segunda-parte {
+        margin-bottom: 50px;
+    }
+    
+    .conteudo-imgTexto {
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+        gap: 25px;
+    }
+
+    .conteudo-texto h1 {
+        font-size: 50px;
+        font-weight: 900;
+        width: 50%;
+    }
+
+    .img-grande {
+        width: 550px;
+    }
+
+    .conteudo-textoSecundario {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 300px;
+        background-color: hsl(240, 100%, 5%);
+        padding: 15px;
+    }
+
+    .informacoes {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 900px;
+        gap: 50px;
+    }
+
+    .imagemP {
+        height: 150px;
+        width: 150px;
+    }
+
+    .informacoes-texto {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .informacoes-texto h1 {
+        color: hsl(233, 8%, 79%);
+        font-weight: 900;
+        font-size: 25px;
+    }
+    
+    .informacoes-texto h3 {
+        color: hsl(240, 100%, 5%);
+        font-size: 17px;
+    }
+    
+    .informacoes-texto p {
+        color: hsl(236, 13%, 42%);
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:902px) {
+    .menu-mobile {
+        cursor: pointer;
+    }
+    
+    .hamburguer {
+        visibility: visible;
+    }
+
+    .menu li {
+        padding: 20px;
+    }
+
+    .menu a {
+        color: hsl(240, 100%, 5%);
+    }
+
+    .navegacao .menu {
+        position: absolute;
+        top: 110px;
+        right: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+        height: 0;
+        background-color: rgba(128, 128, 128, 0.904);
+        overflow-y: hidden;
+        visibility: hidden;
+        z-index: 1000;
+        transition: .6s;
+    }
+
+    .navegacao.ativo .menu{
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
+
+    }
+
+    .navegacao.ativo .hamburguer {
+        border-top-color: transparent;
+    }
+
+    .navegacao.ativo .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .navegacao.ativo .hamburguer::before {
+        transform: rotate(135deg); 
+    }
+
+    .primeira-parte {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacoes {
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+        margin-bottom: 50px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width:617px) {
+    header {
+        justify-content: space-between;
+        margin: 70px 30px 30px 30px;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-texto {
+        flex-direction: column;
+    }
+
+    .conteudo-imgTexto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .conteudo-texto {
+        width: 400px;
+    }
+
+    .conteudo-texto h1 {
+        width: 100%;
+    }
+
+    .conteudo-textoBotao {
+        width: 100%;
+    }
+
+    .img-grande {
+        width: 400px;
+    }
+
+    .informacoes {
+        width: 100%;
+        gap: 50px;
+    }
+
+
+}
+
+@media screen and (max-width:428px) {
+    
+    .img-grande {
+        width: 300px;
+    }
+
+    .conteudo-texto {
+        width: 80%;
+    }
+
+    .conteudo-texto h1 {
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .conteudo-textoBotao {
+        width: 100%;
+    }
+
+    .informacoes-imgTexto{
+        width: 82%;
+    }
+
+    .informacoes-texto {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .informacoes-texto h1 {
+        color: hsl(233, 8%, 79%);
+        font-weight: 900;
+        font-size: 25px;
+    }
+    
+    .informacoes-texto h3 {
+        color: hsl(240, 100%, 5%);
+        font-size: 17px;
+    }
+    
+    .informacoes-texto p {
+        color: hsl(236, 13%, 42%);
+        font-size: 15px;
+    }
+
+    .conteudo-textoBotao button{
+        width: 60%;
+    }
+}
